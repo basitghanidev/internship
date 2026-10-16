@@ -1,6 +1,6 @@
-import os 
 
-college_name = "My College"
+
+uni_name = "AWKUM"
 passing_marks = 40
 
 subjects = ("Math", "Science", "English")
@@ -20,8 +20,7 @@ def check_result(marks):
         return "Pass"
     else:
         return "Fail"
-
-print(f"College: {college_name}")
+print(f"College: {uni_name}")
 print(f"Subjects: {subjects}")
 print(f"Courses Available: {courses}")
 
@@ -30,7 +29,3 @@ for name in students:
     grade = check_result(marks) 
     print(f"{name} -> {grade}")
 
-if os.path.exists("report.txt"):
-    print("Report file already exists")
-else:
-    print("No report file found, its okay")
